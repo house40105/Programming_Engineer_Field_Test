@@ -36,7 +36,7 @@ Take home test
      * 搜索結果會顯示在一個table中，並且按照time_epoch欄位升序排列  
 
 **5. 系統架構**  
-  ![image](https://github.com/house40105/Programming_Engineer_Field_Test/blob/main/file%20architecture.jpg "File Architecture")  
+  ![image](https://github.com/house40105/Programming_Engineer_Field_Test/blob/main/fig/file%20architecture.jpg "File Architecture")  
   **1. CLI_menu.sh:** 執行 shell script 來執行查詢功能，使用者可以透過此 shell script 與資料庫進行互動，並透過輸入查詢條件查詢資料庫。  
   **2. dns_database.sql:** 資料庫建立檔案，包含 dns_table 資料表的建立和資料庫使用者的權限設置等。  
   **3. dns_sample.csv:** 包含 DNS 記錄的 CSV 檔案。  
