@@ -30,6 +30,7 @@ Take home test
 2. 匯入CSV檔案到MySQL database  
      * 使用以下命令：**mysqlimport --local --fields-terminated-by=',' --lines-terminated-by='\n' dns_database dns_sample.csv**  
      * 如果出現錯誤1045，請使用以下命令來解決：**GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;**  
+     * 或使用import.py
 3. 使用shell script "CLI_menu.sh" 來搜索database中的dns_records table  
      * 以CLI menu的形式提供3個選項：ip.src、frame.time_epoch、dns.qry.name  
      * 每次搜索只會顯示50條結果，並且有分頁功能  
