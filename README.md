@@ -26,7 +26,7 @@ Take home test
 **4. 操作流程**  
 1. 使用sysbench進行MySQL壓力測試  
      * 使用以下參數: oltp_read_write, db-driver=mysql, table-size=1000000  
-     * 產生壓力測試報告，例如 sysbench_report.txt  
+     * 產生壓力測試報告，例如 report.txt  
 2. 匯入CSV檔案到MySQL database  
      * 使用以下命令：**mysqlimport --local --fields-terminated-by=',' --lines-terminated-by='\n' dns_database dns_sample.csv**  
      * 如果出現錯誤1045，請使用以下命令來解決：**GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;**  
