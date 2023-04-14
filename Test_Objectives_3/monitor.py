@@ -11,7 +11,7 @@ def check_mysql():
     檢查 MySQL 連線狀態
     """
     try:
-        conn = pymysql.connect(host='localhost', user='root', password='Happy8.0', db='dns_database')
+        conn = pymysql.connect(host='localhost', user='root', password='********', db='dns_database')
         conn.close()
         return 'OK'
     except pymysql.MySQLError as e:
