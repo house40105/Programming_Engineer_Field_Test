@@ -1,0 +1,2 @@
+[root@localhost ~]# crontab -e
+*/5 * * * * /healthcheck/monitor.py
