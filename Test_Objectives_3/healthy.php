@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$username = 'username';
-$password = 'password';
-$dbname = 'dbname';
+$username = 'root';
+$password = 'Happy8.0';
+$dbname = 'dns_database';
 
 // 建立與 MySQL 的連線
 $conn = new mysqli($host, $username, $password, $dbname);

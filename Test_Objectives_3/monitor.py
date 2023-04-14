@@ -11,7 +11,7 @@ def check_mysql():
     檢查 MySQL 連線狀態
     """
     try:
-        conn = pymysql.connect(host='localhost', user='root', password='password', db='test')
+        conn = pymysql.connect(host='localhost', user='root', password='Happy8.0', db='dns_database')
         conn.close()
         return 'OK'
     except pymysql.MySQLError as e:
@@ -22,7 +22,7 @@ def check_php_mysql():
     檢查 PHP 與 MySQL 連線狀態
     """
     try:
-        response = urlopen('http://127.0.0.1/healthy.php', timeout=10)
+        response = urlopen('http://127.0.0.1/home/healthcheck/healthy.php', timeout=10)
         result = json.loads(response.read().decode('utf-8'))
         if result['mysql_status'] == 'OK':
             return 'OK'
