@@ -66,6 +66,6 @@ Take home test
   
   **5. healthy.php:** 這是一個 PHP 頁面，用於測試 PHP 到 MySQL 的連接狀態。如果連接正常，則回傳 JSON 格式的 {"mysql_status":"OK"}；如果無法連接，則回傳 JSON 格式的 {"mysql_status":"ERROR"}。  
   **6. config.ini:** 這是一個配置文件，用於設置監視程式的行為。它包括系統日誌和healthy.php的 URL。  
-  **7. monitor.py.sh:** 監視程式的主要代碼，會定期（每 5 分鐘）訪問healthy.php，並記錄頁面返回的結果。如果連接正常，程序會在系統日誌中記錄成功的消息，如果連接失敗，程序會在系統日誌中記錄錯誤消息。  
- 
+  **7. monitor.py:** 監視程式的主要代碼，會定期（每 5 分鐘）訪問healthy.php，並記錄頁面返回的結果。如果連接正常，程序會在系統日誌中記錄成功的消息，如果連接失敗，程序會在系統日誌中記錄錯誤消息。  
+  **8. monitor.log:** 當 **monitor.py** 執行時，它會將每次檢查 Web 服務和 MySQL 連接狀態的結果記錄到 **monitor.log** 文件中。記錄中包含檢查的日期和時間、程序的 PID（進程 ID）、HTTP 響應內容，以及檢查結果是否正常。  
  
